@@ -96,9 +96,9 @@ with st.sidebar:
 # ── Fetch price history ────────────────────────────────────────────────────
 trade_start = trades[trades["symbol"] == symbol]["date"].min()
 chart_start = max(
-    trade_start - timedelta(days=30),
+    (trade_start - timedelta(days=30)).date(),
     today - timedelta(days=lookback_days),
-).date()
+)
 
 with st.spinner(f"Fetching {symbol} price history..."):
     hist = get_history(symbol, str(chart_start), str(today))
