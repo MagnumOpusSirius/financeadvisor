@@ -90,7 +90,7 @@ financeadvisor/
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/YOUR_USERNAME/financeadvisor.git
+git clone https://github.com/MagnumOpusSirius/financeadvisor.git
 cd financeadvisor
 
 # 2. Create a virtual environment
